@@ -1,0 +1,7 @@
+XAMPP を利用して仮想サーバーを構築する際に、
+ApacheのDocumentRootをここにあるhtdocsフォルダに指定する。
+
+
+ドキュメントルート(DocumentRoot) - コンテンツの設置 - Apache入門 
+https://www.adminweb.jp/apache/docroot/index1.html
+
