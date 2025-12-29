@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Complete
@@ -56,6 +56,20 @@ namespace Complete
             {
                 OnDeath ();
             }
+        }
+
+
+        // 【追加機能】回復メソッド - 回復アイテム用
+        public void Heal(float amount)
+        {
+            // 死んでいる場合は回復しない
+            if (m_Dead) return;
+            
+            // 体力を回復（最大値を超えない）
+            m_CurrentHealth = Mathf.Min(m_CurrentHealth + amount, m_StartingHealth);
+            
+            // UIを更新
+            SetHealthUI();
         }
 
 
