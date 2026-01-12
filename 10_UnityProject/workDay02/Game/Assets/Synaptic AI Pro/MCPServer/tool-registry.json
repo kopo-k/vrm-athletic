@@ -1,0 +1,2054 @@
+{
+  "unity_create_gameobject": {
+    "title": "Create GameObject",
+    "description": "Create a new GameObject in Unity scene",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_update_gameobject": {
+    "title": "Update GameObject",
+    "description": "Update properties of an existing GameObject",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_delete_gameobject": {
+    "title": "Delete GameObject",
+    "description": "Delete a GameObject from the scene",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_set_transform": {
+    "title": "Set Transform",
+    "description": "Set position, rotation, and scale of a GameObject",
+    "category": "Transform",
+    "embedding": null
+  },
+  "unity_add_component": {
+    "title": "Add Component",
+    "description": "Add a component to a GameObject",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_update_component": {
+    "title": "Update Component",
+    "description": "Update component properties",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_create_ui": {
+    "title": "Create UI Element",
+    "description": "Create UI elements in Unity",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_create_terrain": {
+    "title": "Create Terrain",
+    "description": "Create a terrain in Unity",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_modify_terrain": {
+    "title": "Modify Terrain",
+    "description": "Modify terrain height or textures",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_setup_camera": {
+    "title": "Setup Camera",
+    "description": "Setup camera in the scene",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_virtual_camera": {
+    "title": "Create Cinemachine Virtual Camera",
+    "description": "Create a Cinemachine Virtual Camera with follow and look at targets",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_freelook_camera": {
+    "title": "Create Cinemachine FreeLook Camera",
+    "description": "Create a Cinemachine FreeLook Camera for third-person orbiting. REQUIRED: \"follow\" parameter must specify an existing GameObject name in the scene. The target GameObject must exist before creating the camera. Example: unity_create_freelook_camera({name: \"PlayerCamera\", follow: \"Player\"}). Will fail if follow target does not exist.",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_setup_cinemachine_brain": {
+    "title": "Setup Cinemachine Brain",
+    "description": "Setup Cinemachine Brain on a camera (required for Cinemachine to work)",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_update_virtual_camera": {
+    "title": "Update Virtual Camera Settings",
+    "description": "Update settings of an existing Cinemachine Virtual Camera",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_dolly_track": {
+    "title": "Create Cinemachine Dolly Track",
+    "description": "Create a Cinemachine Dolly Track with waypoints for camera path animation",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_add_collider_extension": {
+    "title": "Add Cinemachine Collider Extension",
+    "description": "Add Collider Extension to Virtual Camera for obstacle avoidance",
+    "category": "Physics",
+    "embedding": null
+  },
+  "unity_add_confiner_extension": {
+    "title": "Add Cinemachine Confiner Extension",
+    "description": "Add Confiner Extension to restrict camera movement within bounds",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_create_state_driven_camera": {
+    "title": "Create Cinemachine State-Driven Camera",
+    "description": "Create a State-Driven Camera that switches based on Animator state",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_clear_shot_camera": {
+    "title": "Create Cinemachine Clear Shot Camera",
+    "description": "Create a Clear Shot Camera for dynamic shot selection with obstacle avoidance",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_impulse_source": {
+    "title": "Create Cinemachine Impulse Source",
+    "description": "Create an Impulse Source for triggering camera shake effects",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_add_impulse_listener": {
+    "title": "Add Cinemachine Impulse Listener",
+    "description": "Add an Impulse Listener extension to a virtual camera to receive shake effects",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_create_blend_list_camera": {
+    "title": "Create Cinemachine Blend List Camera",
+    "description": "Create a Blend List Camera that manages a prioritized list of child virtual cameras",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_target_group": {
+    "title": "Create Cinemachine Target Group",
+    "description": "Create a Target Group for managing multiple camera targets with automatic framing",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_add_target_to_group": {
+    "title": "Add Target to Cinemachine Target Group",
+    "description": "Add a GameObject as a target to an existing Target Group",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_set_camera_priority": {
+    "title": "Set Cinemachine Camera Priority",
+    "description": "Change the priority of a Cinemachine virtual camera",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_set_camera_enabled": {
+    "title": "Enable/Disable Cinemachine Camera",
+    "description": "Enable or disable a Cinemachine virtual camera",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_create_mixing_camera": {
+    "title": "Create Cinemachine Mixing Camera",
+    "description": "Create a Mixing Camera that blends multiple child cameras with weighted averaging",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_update_camera_target": {
+    "title": "Update Cinemachine Camera Target",
+    "description": "Update Follow and/or LookAt targets of a Cinemachine camera",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_update_brain_blend_settings": {
+    "title": "Update Cinemachine Brain Blend Settings",
+    "description": "Update the default blend settings on the Cinemachine Brain",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_get_active_camera_info": {
+    "title": "Get Active Cinemachine Camera Info",
+    "description": "Get information about the currently active Cinemachine virtual camera",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_setup_lighting": {
+    "title": "Setup Lighting",
+    "description": "Setup lighting in the scene with extended options and presets",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_material": {
+    "title": "Create Material",
+    "description": "Create a new material",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_create_script": {
+    "title": "Create Script",
+    "description": "Create a new C# script. NOTE: Cannot overwrite existing scripts. To replace an existing script entirely, use unity_modify_script with operation=\"replace\"",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_manage_scene": {
+    "title": "Manage Scene",
+    "description": "Scene management operations",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_load_scene": {
+    "title": "Load Scene",
+    "description": "🎬 Load a scene in Editor mode. Supports Single (replace current) or Additive (load alongside current) modes. Can load by path or name.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_unload_scene": {
+    "title": "Unload Scene",
+    "description": "🗑️ Unload a scene from the Editor. Useful for managing multi-scene setups. Cannot unload the last remaining scene.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_set_active_scene": {
+    "title": "Set Active Scene",
+    "description": "⭐ Set the active scene in multi-scene editing. The active scene is where new GameObjects are created by default.",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_list_all_scenes": {
+    "title": "List All Scenes",
+    "description": "📋 List all scene files in the project. Returns scene paths, names, and build settings info. Supports filtering and sorting.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_add_scene_to_build": {
+    "title": "Add Scene to Build Settings",
+    "description": "⚙️ Add or remove scenes from Build Settings. Manage build order and enable/disable scenes.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_create_animation": {
+    "title": "Create Animation",
+    "description": "Create animation for GameObject",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_setup_physics": {
+    "title": "Setup Physics",
+    "description": "Setup physics settings for a GameObject or global physics",
+    "category": "Physics",
+    "embedding": null
+  },
+  "unity_create_particle_system": {
+    "title": "Create Particle System",
+    "description": "Create a particle system with extended presets and customization options",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_setup_material": {
+    "title": "Setup Material",
+    "description": "Create or modify materials with PBR properties and shaders",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_setup_navmesh": {
+    "title": "Setup NavMesh",
+    "description": "Setup navigation mesh",
+    "category": "Physics",
+    "embedding": null
+  },
+  "unity_create_audio_mixer": {
+    "title": "Create Audio Mixer",
+    "description": "Create an audio mixer",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_audio_source": {
+    "title": "Create Audio Source",
+    "description": "Create and configure an AudioSource component on a GameObject",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_setup_3d_audio": {
+    "title": "Setup 3D Audio",
+    "description": "Configure 3D spatial audio settings for an AudioSource",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_audio_clip": {
+    "title": "Create/Import Audio Clip",
+    "description": "Import audio file or create procedural audio clip",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_setup_audio_effects": {
+    "title": "Setup Audio Effects",
+    "description": "Add and configure audio effects (filters, reverb, echo, etc.)",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_reverb_zones": {
+    "title": "Create Reverb Zones",
+    "description": "Create audio reverb zones for environmental effects",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_setup_audio_occlusion": {
+    "title": "Setup Audio Occlusion",
+    "description": "Configure audio occlusion for realistic sound blocking",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_adaptive_music": {
+    "title": "Create Adaptive Music System",
+    "description": "Create intro+loop music system with dynamic transitions",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_setup_audio_triggers": {
+    "title": "Setup Audio Triggers",
+    "description": "Configure event-based audio triggers",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_sound_pools": {
+    "title": "Create Sound Pools",
+    "description": "Create sound variation pools for dynamic audio",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_audio_mixing": {
+    "title": "Create Dynamic Audio Mixing",
+    "description": "Setup real-time audio mixing and ducking systems",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_setup_spatial_audio": {
+    "title": "Setup Spatial Audio",
+    "description": "Configure advanced spatial audio for VR/AR",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_create_audio_visualization": {
+    "title": "Create Audio Visualization",
+    "description": "Create visual effects that react to audio",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_setup_custom_input": {
+    "title": "Setup Custom Input",
+    "description": "Configure custom input actions and bindings",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_gesture_recognition": {
+    "title": "Create Gesture Recognition",
+    "description": "Setup gesture recognition for touch or motion input",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_setup_haptic_feedback": {
+    "title": "Setup Haptic Feedback",
+    "description": "Configure haptic/vibration feedback for mobile and controllers",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_input_validation": {
+    "title": "Create Input Validation",
+    "description": "Create input validation system for text fields and forms",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_setup_accessibility_input": {
+    "title": "Setup Accessibility Input",
+    "description": "Configure accessibility features for input (screen readers, large buttons, etc)",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_input_recording": {
+    "title": "Create Input Recording",
+    "description": "Setup input recording and playback system for testing or replay",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_setup_multitouch": {
+    "title": "Setup Multitouch",
+    "description": "Configure multitouch input handling",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_pinch_zoom": {
+    "title": "Create Pinch Zoom",
+    "description": "Setup pinch-to-zoom functionality",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_setup_swipe_detection": {
+    "title": "Setup Swipe Detection",
+    "description": "Configure swipe gesture detection",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_drag_drop": {
+    "title": "Create Drag & Drop",
+    "description": "Setup drag and drop functionality",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_setup_touch_effects": {
+    "title": "Setup Touch Effects",
+    "description": "Configure visual effects for touch interactions",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_particle_preset": {
+    "title": "Create Particle Preset",
+    "description": "Create advanced particle effects with presets",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_create_advanced_material": {
+    "title": "Create Advanced Material",
+    "description": "Create materials with advanced settings and textures",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_setup_lighting_preset": {
+    "title": "Setup Lighting Preset",
+    "description": "Apply professional lighting presets to the scene",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_visual_effect": {
+    "title": "Create Visual Effect",
+    "description": "Create complex visual effects combining particles, lights, and more",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_setup_reflection_probe": {
+    "title": "Setup Reflection Probe",
+    "description": "Setup reflection probes for realistic reflections",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_light_probe_group": {
+    "title": "Create Light Probe Group",
+    "description": "Create light probe groups for dynamic GI",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_setup_volumetric_fog": {
+    "title": "Setup Volumetric Fog",
+    "description": "Create atmospheric volumetric fog effects",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_decal": {
+    "title": "Create Decal",
+    "description": "Create decal projections for details like dirt, damage, etc",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_setup_color_grading": {
+    "title": "Setup Color Grading",
+    "description": "Apply color grading for cinematic look",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_lens_flare": {
+    "title": "Create Lens Flare",
+    "description": "Create realistic lens flare effects",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_screen_shake": {
+    "title": "Create Screen Shake",
+    "description": "Apply screen shake effect for dramatic impact",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_screen_fade": {
+    "title": "Create Screen Fade",
+    "description": "Create fade in/out transitions",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_vignette_effect": {
+    "title": "Create Vignette Effect",
+    "description": "Add cinematic vignette framing to scene",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_chromatic_aberration": {
+    "title": "Create Chromatic Aberration",
+    "description": "Add lens distortion and color separation effect",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_shader_property_animator": {
+    "title": "Create Shader Property Animator",
+    "description": "Animate shader properties like color, float, or vector values",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_material_property_block": {
+    "title": "Create Material Property Block",
+    "description": "Modify material properties without creating material instances",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_animate_shader_texture": {
+    "title": "Animate Shader Texture",
+    "description": "Create scrolling, flipbook, or rotating texture animations",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_shader_gradient": {
+    "title": "Create Shader Gradient",
+    "description": "Apply gradient effects to materials",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_bloom": {
+    "title": "Create Bloom Effect",
+    "description": "🌟 Create bloom effect with auto-generated shader - Adds beautiful glow to bright areas!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_film_grain": {
+    "title": "Create Film Grain Effect",
+    "description": "🎬 Create film grain effect with auto-generated shader - Adds cinematic film texture!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_motion_blur": {
+    "title": "Create Motion Blur Effect",
+    "description": "💨 Create motion blur effect with auto-generated shader - Adds dynamic motion feel!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_depth_of_field": {
+    "title": "Create Depth of Field Effect",
+    "description": "📷 Create depth of field effect with auto-generated shader - Professional camera focus!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_lens_distortion": {
+    "title": "Create Lens Distortion Effect",
+    "description": "🔍 Create lens distortion effect with auto-generated shader - Realistic camera lens effects!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_setup_urp_settings": {
+    "title": "Setup URP Settings",
+    "description": "🖼️ Configure Universal Render Pipeline settings with natural language - Optimize for any platform!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_setup_hdrp_settings": {
+    "title": "Setup HDRP Settings",
+    "description": "🌟 Configure High Definition Render Pipeline settings - For photorealistic visuals!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_setup_post_processing": {
+    "title": "Setup Post Processing",
+    "description": "🎨 Configure post-processing effects stack - Professional color grading and effects!",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_vfx_graph": {
+    "title": "Create VFX / Particle Effect",
+    "description": "Create VFX particle effects with advanced features. Supports mesh spawning, SDF shapes, splines, custom output modes. Uses VFX Graph (GPU) if available, otherwise Particle System.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_create_shader_graph": {
+    "title": "Create Shader Graph",
+    "description": "🎭 Create Shader Graph with natural language - Custom materials made easy!",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_set_vfx_property": {
+    "title": "Set VFX Graph Property",
+    "description": "Modify exposed properties of a VFX Graph at runtime. Change colors, intensity, particle count, etc.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_get_vfx_properties": {
+    "title": "Get VFX Graph Properties",
+    "description": "Get all exposed properties of a VFX Graph. See available parameters for modification.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_trigger_vfx_event": {
+    "title": "Trigger VFX Event",
+    "description": "Send event to VFX Graph (play, stop, custom events)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_create": {
+    "title": "Create VFX Graph",
+    "description": "Create a new VFX Graph asset. This is the first step for building custom VFX.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_add_context": {
+    "title": "Add VFX Context",
+    "description": "Add a context (Spawn, Initialize, Update, Output) to VFX Graph. Contexts define the particle lifecycle.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_add_block": {
+    "title": "Add VFX Block",
+    "description": "Add a block to a context. Blocks define particle behavior (position, velocity, color, forces, etc.)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_add_operator": {
+    "title": "Add VFX Operator",
+    "description": "Add an operator node to VFX Graph. Operators perform calculations (math, noise, sampling, etc.)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_link_contexts": {
+    "title": "Link VFX Contexts",
+    "description": "Link two contexts together (e.g., Spawn -> Initialize -> Update -> Output)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_get_structure": {
+    "title": "Get VFX Structure",
+    "description": "Get the structure of a VFX Graph (contexts, blocks, operators)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_compile": {
+    "title": "Compile VFX",
+    "description": "Compile and save the VFX Graph",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_get_available_types": {
+    "title": "Get Available VFX Types",
+    "description": "List all available context, block, and operator types",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_add_parameter": {
+    "title": "Add VFX Parameter",
+    "description": "Add an exposed parameter to VFX Graph that can be controlled from Inspector or scripts",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_connect_slots": {
+    "title": "Connect VFX Slots",
+    "description": "Connect output slot of one node to input slot of another (operator->block, parameter->operator, etc.)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_set_attribute": {
+    "title": "Set VFX Block Attribute",
+    "description": "Set attribute value on a SetAttribute block (position, velocity, color, size, lifetime, etc.)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_create_preset": {
+    "title": "Create VFX Preset",
+    "description": "Create a complete VFX Graph from preset (fire, smoke, sparks, trail, explosion)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_configure_output": {
+    "title": "Configure VFX Output",
+    "description": "Configure VFX output context settings (texture, blend mode, soft particles, etc.)",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_vfx_set_color_gradient": {
+    "title": "Set VFX Color Gradient",
+    "description": "Set color gradient for ColorOverLife or similar blocks",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_setup_lighting_scenarios": {
+    "title": "Setup Lighting Scenarios",
+    "description": "💡 Create lighting scenarios for different moods - From dawn to midnight!",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_weather_system": {
+    "title": "Create Weather System",
+    "description": "🌦️ Create complete weather system with cinematic presets - One command for movie-quality weather!",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_set_weather_preset": {
+    "title": "Set Weather Preset",
+    "description": "Smoothly transition to a different weather preset",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_create_rain_effect": {
+    "title": "Create Rain Effect",
+    "description": "Create realistic rain effect with particle system",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_create_snow_effect": {
+    "title": "Create Snow Effect",
+    "description": "Create snow effect with falling snowflakes",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_create_wind_effect": {
+    "title": "Create Wind Effect",
+    "description": "Create wind effect affecting objects and particles",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_create_lightning_effect": {
+    "title": "Create Lightning Effect",
+    "description": "Create lightning strikes with flash effects",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_thunderstorm": {
+    "title": "Create Thunderstorm",
+    "description": "Create complete thunderstorm with rain, wind, lightning and fog",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_create_time_of_day": {
+    "title": "Create Time of Day System",
+    "description": "Create dynamic day-night cycle with sun and moon movement",
+    "category": "TimeOfDay",
+    "embedding": null
+  },
+  "unity_set_time_of_day": {
+    "title": "Set Time of Day",
+    "description": "Set specific time in the day-night cycle",
+    "category": "TimeOfDay",
+    "embedding": null
+  },
+  "unity_create_day_night_preset": {
+    "title": "Create Day Night Preset",
+    "description": "Apply preset lighting conditions for different environments",
+    "category": "TimeOfDay",
+    "embedding": null
+  },
+  "unity_create_skybox_blend": {
+    "title": "Create Skybox Blend",
+    "description": "Blend between day and night skyboxes",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_create_time_event": {
+    "title": "Create Time Event",
+    "description": "Create events triggered at specific times",
+    "category": "TimeOfDay",
+    "embedding": null
+  },
+  "unity_search": {
+    "title": "Search Objects",
+    "description": "Search for objects in the scene",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_get_scene_info": {
+    "title": "Get Scene Information",
+    "description": "Get comprehensive information about the current Unity scene including hierarchy, statistics, lighting, and cameras. Now includes detailed Transform data (world/local position, rotation, scale) and RectTransform data (anchors, pivot, sizeDelta, rect) for all GameObjects. WARNING: Can return large response (>1MB) for complex scenes. For large scenes, use unity_get_scene_summary instead.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_get_scene_summary": {
+    "title": "Get Scene Summary (Lightweight)",
+    "description": "Get lightweight scene overview (<200KB). Returns: scene name, GameObject count, cameras, lights, root GameObjects list (max 50). Recommended for large scenes instead of unity_get_scene_info.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_get_gameobjects_list": {
+    "title": "Get Filtered GameObjects List",
+    "description": "Get filtered list of GameObjects (<50KB). Returns GameObject names, IDs, paths, layers, tags. Supports filters: layer, tag, name (contains), activeOnly. Max 100 results.",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_get_gameobject_detail": {
+    "title": "Get GameObject Detailed Information",
+    "description": "Get detailed information for a specific GameObject (<10KB). Returns: transform, components with details, children, parent. Find GameObject by name or instanceId (use unity_get_gameobjects_list first to get IDs).",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_get_scene_changes_since": {
+    "title": "Get Incremental Scene Changes",
+    "description": "Get scene changes since a timestamp. Returns: added, removed, modified GameObjects. Use for efficient scene monitoring. On first call or if timestamp too old, returns full scene summary.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_capture_game_view": {
+    "title": "Capture Game View Screenshot",
+    "description": "Capture a screenshot of the Unity Game View including all Canvas/UI elements. WORKFLOW: 1) Call this tool → returns \"status: pending\" if Play mode transition needed. 2) DO NOT CALL ANY OTHER TOOLS. WAIT EXACTLY 3 SECONDS. This is REQUIRED for Play mode transition and rendering stabilization. 3) After 3 seconds, call unity_get_screenshot_result to retrieve the actual screenshot path and resolution. CRITICAL: The screenshot is NOT complete until you retrieve the result with unity_get_screenshot_re",
+    "category": "Screenshot",
+    "embedding": null
+  },
+  "unity_capture_scene_view": {
+    "title": "Capture Scene View Screenshot",
+    "description": "Capture a screenshot of the Unity Scene View. The image is saved to Assets/Screenshots and can be analyzed by Claude Vision. Returns the file path for immediate analysis.",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_capture_region": {
+    "title": "Capture Specific Region Screenshot",
+    "description": "Capture a screenshot of a specific region within Unity Game View or Scene View. Useful for capturing specific UI elements or areas. WORKFLOW for view=\"game\": 1) Call this tool → returns \"status: pending\" if Play mode transition needed. 2) DO NOT CALL ANY OTHER TOOLS. WAIT EXACTLY 3 SECONDS for Play mode transition and rendering stabilization. 3) After 3 seconds, call unity_get_screenshot_result to retrieve result. CRITICAL: The capture is NOT complete until you retrieve the result with unity_get",
+    "category": "Screenshot",
+    "embedding": null
+  },
+  "unity_get_screenshot_result": {
+    "title": "Get Screenshot Result",
+    "description": "Retrieve the result of a screenshot capture operation that required Play mode transition. WORKFLOW: When unity_capture_game_view or unity_capture_region returns {\"status\": \"pending\"}, Unity is entering Play mode to capture Canvas/UI. Wait EXACTLY 3 SECONDS, then call THIS tool to retrieve the actual screenshot result including file path, width, and height. Returns {\"status\": \"capturing\"} if still in progress (you called too early - wait more), {\"status\": \"no_result\"} if no capture pending.",
+    "category": "Screenshot",
+    "embedding": null
+  },
+  "unity_capture_grid": {
+    "title": "Capture Game View as Grid",
+    "description": "Automatically split and capture the Game View into a grid of multiple screenshots. Useful for analyzing different areas of the UI systematically. WORKFLOW: 1) Call this tool with grid size (e.g., \"2x2\", \"3x3\"). 2) If returns \"status: pending\", WAIT EXACTLY 3 SECONDS for Play mode transition. 3) Call unity_get_screenshot_result to retrieve all grid files. Returns multiple image files (one for each grid cell) with their positions.",
+    "category": "Screenshot",
+    "embedding": null
+  },
+  "unity_capture_ui_element": {
+    "title": "Capture Specific UI Element",
+    "description": "Capture a specific UI element by its GameObject name. Automatically finds the element, calculates its screen bounds, and captures just that region. WORKFLOW: 1) Call this tool with the GameObject name (e.g., \"MoveButton\", \"HealthBar\"). 2) If returns \"status: pending\", WAIT EXACTLY 3 SECONDS for Play mode transition. 3) Call unity_get_screenshot_result to retrieve the captured element. Works with Canvas Overlay, Camera, and World Space render modes.",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_force_refresh_assets": {
+    "title": "Force Refresh Assets",
+    "description": "Force Unity to refresh the asset database and recompile scripts. IMPORTANT: Before using this tool after editing .cs files, always run unity_analyze_console_logs with logType:\"error\" to check for syntax/compile errors. If errors exist, fix them first. Only refresh when error-free. Essential after modifying .cs files to ensure changes are recognized before invoking methods.",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_invoke_context_menu": {
+    "title": "Invoke ContextMenu Method",
+    "description": "Invoke a method decorated with [ContextMenu] attribute on a component. Perfect for triggering custom editor actions like BuildLayout(), GenerateUI(), etc. WORKFLOW: 1) Edit code 2) unity_analyze_console_logs(error) 3) Fix errors if any 4) unity_force_refresh_assets 5) unity_analyze_console_logs(error) 6) Use this tool. This ensures error-free execution.",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_get_inspector_info": {
+    "title": "Get Inspector Information",
+    "description": "Get detailed inspector information for a specific GameObject, including all components, properties, and values",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_get_selected_object_info": {
+    "title": "Get Selected Object Inspector Info",
+    "description": "Get detailed inspector information for the currently selected GameObject in the Unity Editor",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_get_component_details": {
+    "title": "Get Component Details",
+    "description": "Get detailed information about a specific component on a GameObject, including all serialized properties",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_console": {
+    "title": "Console Operations",
+    "description": "Unity console log count and basic info retrieval",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_analyze_console_logs": {
+    "title": "Analyze Console Logs",
+    "description": "Detailed analysis of Unity console logs with file paths, line numbers and stack traces. CRITICAL: Always use this BEFORE unity_force_refresh_assets when you edit .cs files - check for syntax/compile errors with logType:\"error\". This prevents compilation failures and ensures clean workflows. Returns detailed error info including file paths and line numbers for easy fixing.",
+    "category": "Editor",
+    "embedding": null
+  },
+  "unity_list_packages": {
+    "title": "List Packages",
+    "description": "List all installed Unity packages",
+    "category": "Package",
+    "embedding": null
+  },
+  "unity_install_package": {
+    "title": "Install Package",
+    "description": "Install a Unity package",
+    "category": "Package",
+    "embedding": null
+  },
+  "unity_remove_package": {
+    "title": "Remove Package",
+    "description": "Remove an installed Unity package",
+    "category": "Transform",
+    "embedding": null
+  },
+  "unity_check_package": {
+    "title": "Check Package",
+    "description": "Check if a package is installed",
+    "category": "Package",
+    "embedding": null
+  },
+  "unity_place_objects": {
+    "title": "Place Objects",
+    "description": "Place multiple objects with pattern",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_get_operation_history": {
+    "title": "Get Operation History",
+    "description": "Get history of Unity operations",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_undo_operation": {
+    "title": "Undo Operation",
+    "description": "Undo last Unity operation",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_redo_operation": {
+    "title": "Redo Operation",
+    "description": "Redo previously undone operation",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_create_checkpoint": {
+    "title": "Create Checkpoint",
+    "description": "Create a checkpoint to restore later",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_restore_checkpoint": {
+    "title": "Restore Checkpoint",
+    "description": "Restore a previously created checkpoint",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_monitor_play_state": {
+    "title": "Monitor Play State",
+    "description": "Monitor Unity play mode state changes",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_monitor_file_changes": {
+    "title": "Monitor File Changes",
+    "description": "Monitor file changes in the project",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_monitor_compile": {
+    "title": "Monitor Compilation",
+    "description": "Monitor script compilation events",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_subscribe_events": {
+    "title": "Subscribe to Events",
+    "description": "Subscribe to Unity events",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_get_events": {
+    "title": "Get Events",
+    "description": "Get recent Unity events",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_get_monitoring_status": {
+    "title": "Get Monitoring Status",
+    "description": "Get current monitoring status",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_get_build_settings": {
+    "title": "Get Build Settings",
+    "description": "Get Unity build settings",
+    "category": "Build",
+    "embedding": null
+  },
+  "unity_get_player_settings": {
+    "title": "Get Player Settings",
+    "description": "Get Unity player settings",
+    "category": "Build",
+    "embedding": null
+  },
+  "unity_get_quality_settings": {
+    "title": "Get Quality Settings",
+    "description": "Get Unity quality settings",
+    "category": "Build",
+    "embedding": null
+  },
+  "unity_get_input_settings": {
+    "title": "Get Input Settings",
+    "description": "Get Unity input settings",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_get_physics_settings": {
+    "title": "Get Physics Settings",
+    "description": "Get Unity physics settings",
+    "category": "Physics",
+    "embedding": null
+  },
+  "unity_get_project_summary": {
+    "title": "Get Project Summary",
+    "description": "Get overall project summary",
+    "category": "Build",
+    "embedding": null
+  },
+  "unity_list_assets": {
+    "title": "List Assets",
+    "description": "List assets in the project",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_search_prefabs_by_component": {
+    "title": "Search Prefabs by Component",
+    "description": "🔍 Search for prefabs containing specific component(s). Useful for finding all prefabs with Rigidbody, Collider, custom scripts, etc.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_find_material_usage": {
+    "title": "Find Material Usage",
+    "description": "🎨 Find all GameObjects, prefabs, and renderers using a specific material. Shows where materials are referenced in the project.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_find_texture_usage": {
+    "title": "Find Texture Usage",
+    "description": "🖼️ Find all materials and shaders using a specific texture. Useful for understanding texture dependencies.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_get_asset_dependencies": {
+    "title": "Get Asset Dependencies",
+    "description": "🔗 Get all dependencies of an asset (textures, materials, scripts, etc.). Shows complete dependency tree.",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_find_missing_references": {
+    "title": "Find Missing References",
+    "description": "⚠️ Find missing scripts, materials, textures, and other references in scenes and prefabs. Critical for project cleanup.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_check_folder": {
+    "title": "Check Folder",
+    "description": "Check if folder exists",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_create_folder": {
+    "title": "Create Folder",
+    "description": "Create a new folder",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_list_folders": {
+    "title": "List Folders",
+    "description": "List folders in a path",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_duplicate_gameobject": {
+    "title": "Duplicate GameObject",
+    "description": "Duplicate an existing GameObject",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_find_gameobjects_by_component": {
+    "title": "Find GameObjects by Component",
+    "description": "Find all GameObjects with specific component",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_cleanup_empty_objects": {
+    "title": "Cleanup Empty Objects",
+    "description": "Remove empty GameObjects from scene",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_group_gameobjects": {
+    "title": "Group GameObjects",
+    "description": "Group multiple GameObjects under a parent",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_rename_asset": {
+    "title": "Rename Asset",
+    "description": "Rename an asset file",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_move_asset": {
+    "title": "Move Asset",
+    "description": "Move an asset to a different folder",
+    "category": "Transform",
+    "embedding": null
+  },
+  "unity_delete_asset": {
+    "title": "Delete Asset",
+    "description": "Delete an asset from the project",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_pause_scene": {
+    "title": "Pause Scene",
+    "description": "Pause or unpause the scene view",
+    "category": "Scene",
+    "embedding": null
+  },
+  "unity_optimize_textures_batch": {
+    "title": "Optimize Textures Batch",
+    "description": "Batch optimize texture import settings",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_analyze_draw_calls": {
+    "title": "Analyze Draw Calls",
+    "description": "Analyze and report draw call optimization opportunities",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_create_project_snapshot": {
+    "title": "Create Project Snapshot",
+    "description": "Create a snapshot of the current project state",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_analyze_dependencies": {
+    "title": "Analyze Asset Dependencies",
+    "description": "Analyze and visualize asset dependencies in the project",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_export_project_structure": {
+    "title": "Export Project Structure",
+    "description": "Export project folder structure",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_validate_naming_conventions": {
+    "title": "Validate Naming Conventions",
+    "description": "Check if project assets follow naming conventions",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_extract_all_text": {
+    "title": "Extract All Text",
+    "description": "Extract all text content from the project for localization or AI training",
+    "category": "Batch",
+    "embedding": null
+  },
+  "unity_batch_rename": {
+    "title": "Batch Rename Assets",
+    "description": "Batch rename multiple assets using patterns or regex",
+    "category": "Batch",
+    "embedding": null
+  },
+  "unity_batch_import_settings": {
+    "title": "Batch Import Settings",
+    "description": "Apply import settings to multiple assets at once",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_batch_prefab_update": {
+    "title": "Batch Update Prefabs",
+    "description": "Update multiple prefabs with component changes",
+    "category": "Batch",
+    "embedding": null
+  },
+  "unity_batch_material_apply": {
+    "title": "Batch Apply Material",
+    "description": "Apply material to multiple objects at once",
+    "category": "Batch",
+    "embedding": null
+  },
+  "unity_batch_prefab_create": {
+    "title": "Batch Create Prefabs",
+    "description": "Create prefabs from multiple objects at once",
+    "category": "Batch",
+    "embedding": null
+  },
+  "unity_find_unused_assets": {
+    "title": "Find Unused Assets",
+    "description": "Find assets that are not referenced in the project",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_estimate_build_size": {
+    "title": "Estimate Build Size",
+    "description": "Estimate build size for different platforms",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_performance_report": {
+    "title": "Generate Performance Report",
+    "description": "Generate comprehensive performance analysis report",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_auto_organize_folders": {
+    "title": "Auto Organize Project Folders",
+    "description": "Automatically organize assets into appropriate folders",
+    "category": "AssetManagement",
+    "embedding": null
+  },
+  "unity_generate_lod": {
+    "title": "Generate LOD Groups",
+    "description": "Automatically generate LOD groups for meshes",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_auto_atlas_textures": {
+    "title": "Auto Create Texture Atlas",
+    "description": "Automatically create texture atlases from multiple textures",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_create_game_controller": {
+    "title": "Create Game Controller",
+    "description": "Create player controller for different game types (FirstPerson, ThirdPerson, TopDown, Platformer2D)",
+    "category": "GameSystems",
+    "embedding": null
+  },
+  "unity_setup_input_system": {
+    "title": "Setup Input System",
+    "description": "Setup Unity Input System with predefined templates",
+    "category": "Input",
+    "embedding": null
+  },
+  "unity_create_state_machine": {
+    "title": "Create State Machine",
+    "description": "Create a state machine for character or game states",
+    "category": "GameSystems",
+    "embedding": null
+  },
+  "unity_setup_inventory_system": {
+    "title": "Setup Inventory System",
+    "description": "Create an inventory system with UI",
+    "category": "GameSystems",
+    "embedding": null
+  },
+  "unity_create_game_template": {
+    "title": "Create Game Template",
+    "description": "Create complete game templates for different genres",
+    "category": "GameSystems",
+    "embedding": null
+  },
+  "unity_quick_prototype": {
+    "title": "Quick Prototype",
+    "description": "Create a quick playable prototype with specified elements",
+    "category": "GameSystems",
+    "embedding": null
+  },
+  "unity_setup_ml_agent": {
+    "title": "Setup ML Agent",
+    "description": "Setup a Machine Learning Agent for reinforcement learning",
+    "category": "AI",
+    "embedding": null
+  },
+  "unity_create_neural_network": {
+    "title": "Create Neural Network",
+    "description": "Create a neural network system for AI decision making",
+    "category": "AI",
+    "embedding": null
+  },
+  "unity_setup_behavior_tree": {
+    "title": "Setup Behavior Tree",
+    "description": "Setup a behavior tree AI system for complex AI behaviors",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_create_ai_pathfinding": {
+    "title": "Create AI Pathfinding",
+    "description": "Create an AI pathfinding system with A* algorithm",
+    "category": "AI",
+    "embedding": null
+  },
+  "unity_control_game_speed": {
+    "title": "Control Game Speed",
+    "description": "Control Unity game speed (time scale) for debugging",
+    "category": "Debug",
+    "embedding": null
+  },
+  "unity_profile_performance": {
+    "title": "Profile Performance",
+    "description": "Get Unity performance profiling data",
+    "category": "Debug",
+    "embedding": null
+  },
+  "unity_debug_draw": {
+    "title": "Debug Draw",
+    "description": "Draw debug shapes in Unity scene",
+    "category": "Debug",
+    "embedding": null
+  },
+  "unity_run_tests": {
+    "title": "Run Unity Tests",
+    "description": "Run Unity Test Runner tests",
+    "category": "Debug",
+    "embedding": null
+  },
+  "unity_manage_breakpoints": {
+    "title": "Manage Breakpoints",
+    "description": "Manage debugging breakpoints in Unity",
+    "category": "Debug",
+    "embedding": null
+  },
+  "unity_define_goap_goal": {
+    "title": "Define GOAP Goal",
+    "description": "Define a goal for GOAP agents using natural language",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_create_goap_action": {
+    "title": "Create GOAP Action",
+    "description": "Create an action for GOAP agents",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_generate_goap_action_set": {
+    "title": "Generate GOAP Action Set",
+    "description": "Automatically generate a complete action set based on agent type and goals",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_setup_goap_world_state": {
+    "title": "Setup GOAP World State",
+    "description": "Configure the world state for GOAP planning",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_debug_goap_decisions": {
+    "title": "Debug GOAP Decisions",
+    "description": "Visualize and debug GOAP decision-making process",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_optimize_goap_performance": {
+    "title": "Optimize GOAP Performance",
+    "description": "Optimize GOAP agent performance for better frame rates",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_start_bt": {
+    "title": "Start Behavior Tree",
+    "description": "Start running a behavior tree on an agent",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_stop_bt": {
+    "title": "Stop Behavior Tree",
+    "description": "Stop a running behavior tree",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_debug_bt": {
+    "title": "Debug Behavior Tree",
+    "description": "Get debug information about a behavior tree",
+    "category": "Debug",
+    "embedding": null
+  },
+  "unity_create_animator_controller": {
+    "title": "Create Animator Controller",
+    "description": "Create a new Animator Controller with default states and parameters",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_add_animation_state": {
+    "title": "Add Animation State",
+    "description": "Add a new state to an Animator Controller",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_create_animation_clip": {
+    "title": "Create Animation Clip",
+    "description": "Create a new animation clip with sample curves",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_setup_blend_tree": {
+    "title": "Setup Blend Tree",
+    "description": "Create a blend tree for smooth animation transitions",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_add_animation_transition": {
+    "title": "Add Animation Transition",
+    "description": "Create a transition between animation states",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_setup_animation_layer": {
+    "title": "Setup Animation Layer",
+    "description": "Add and configure an animation layer",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_create_animation_event": {
+    "title": "Create Animation Event",
+    "description": "Add an event to an animation clip",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_setup_avatar": {
+    "title": "Setup Avatar",
+    "description": "Configure avatar for a 3D model",
+    "category": "Timeline",
+    "embedding": null
+  },
+  "unity_create_timeline": {
+    "title": "Create Timeline",
+    "description": "Create a Unity Timeline for cinematic sequences",
+    "category": "Timeline",
+    "embedding": null
+  },
+  "unity_bake_animation": {
+    "title": "Bake Animation",
+    "description": "Bake runtime animation into an animation clip",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_create_water_material": {
+    "title": "Create Water Material",
+    "description": "Create Genshin Impact-quality water with physics-based wave reflection. Features: GGX BRDF specular, sun disk reflection on wave peaks, anisotropic highlights stretched along waves, micro-facet glitter, Beer-Lambert absorption, caustics with RGB split, and natural foam.",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_hdrp_water": {
+    "title": "Create HDRP Water Surface",
+    "description": "Create Unity HDRP Water System surface (Ocean, River, or Pool). Requires HDRP 2022.2+",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_set_hdrp_water_property": {
+    "title": "Set HDRP Water Property",
+    "description": "Modify properties of an existing HDRP Water surface",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_set_material_property": {
+    "title": "Set Material Property",
+    "description": "Modify properties of an existing material. Use this to change shader parameters like wave settings, colors, intensity values without recreating the material.",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_get_material_properties": {
+    "title": "Get Material Properties",
+    "description": "Get all properties and their current values from a material. Useful to see available parameters before modifying them.",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_create_toon_material": {
+    "title": "Create Toon Material",
+    "description": "Create stylized toon/cel-shaded material with ramp shading and outlines",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_hair_material": {
+    "title": "Create Hair Material",
+    "description": "Create realistic/stylized hair material with Kajiya-Kay specular and anisotropy",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_eye_material": {
+    "title": "Create Eye Material",
+    "description": "Create realistic/stylized eye material with parallax iris and reflections",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_create_sky_material": {
+    "title": "Create Sky Material",
+    "description": "Create procedural sky material with day/night cycle support",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_dissolve_material": {
+    "title": "Create Dissolve Material",
+    "description": "Create dissolve effect material for appear/disappear transitions",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_shield_material": {
+    "title": "Create Shield Material",
+    "description": "Create energy shield/force field material with fresnel and hit effects",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_grass_material": {
+    "title": "Create Grass Material",
+    "description": "Create stylized grass material with wind animation",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_ocean_system": {
+    "title": "Create Ocean System",
+    "description": "Create a complete ocean system with infinite plane, 8-layer Gerstner waves, and WaterPro shader",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_add_buoyancy": {
+    "title": "Add Buoyancy",
+    "description": "Add buoyancy physics to make an object float on the ocean",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_fix_urp_particle_shaders": {
+    "title": "Fix URP Particle Shaders",
+    "description": "Automatically fix particle materials that show pink/magenta in URP by converting to URP-compatible particle shaders",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_fix_pink_materials": {
+    "title": "Fix Pink/Broken Materials",
+    "description": "Scan project for pink/magenta materials (broken shaders) and automatically fix them for URP compatibility",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_generate_sdf_texture": {
+    "title": "Generate SDF Texture",
+    "description": "Generate Signed Distance Field texture for dissolve effects, shields, etc.",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_generate_ramp_texture": {
+    "title": "Generate Ramp Texture",
+    "description": "Generate color ramp texture for toon shading, stylized rendering",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_generate_cloud_noise": {
+    "title": "Generate Cloud Noise Texture",
+    "description": "Generate 3D noise texture for volumetric clouds, fog effects",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_add_dissolve_controller": {
+    "title": "Add Dissolve Controller",
+    "description": "Add dissolve effect controller to a GameObject for dramatic appear/disappear effects",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_add_shield_controller": {
+    "title": "Add Shield Controller",
+    "description": "Add energy shield effect controller to a GameObject",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_add_grass_renderer": {
+    "title": "Add Grass Renderer",
+    "description": "Add procedural grass renderer to a terrain or plane",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_trigger_dissolve": {
+    "title": "Trigger Dissolve Effect",
+    "description": "Trigger dissolve animation on a GameObject with DissolveController",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_trigger_shield_hit": {
+    "title": "Trigger Shield Hit Effect",
+    "description": "Trigger hit impact effect on a GameObject with ShieldController",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_setup_ui_anchors": {
+    "title": "Setup UI Anchors",
+    "description": "Automatically setup anchors and pivots for UI elements",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_create_responsive_ui": {
+    "title": "Create Responsive UI",
+    "description": "Create responsive UI container with layout groups",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_setup_ui_animation": {
+    "title": "Setup UI Animation",
+    "description": "Setup UI animations for elements (fade, scale, slide)",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_create_ui_grid": {
+    "title": "Create UI Grid",
+    "description": "Create UI grid layout with customizable elements",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_setup_scroll_view": {
+    "title": "Setup Scroll View",
+    "description": "Create complete scroll view with content and scrollbars",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_create_ui_notification": {
+    "title": "Create UI Notification",
+    "description": "Create notification system with different types and positions",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_setup_ui_navigation": {
+    "title": "Setup UI Navigation",
+    "description": "Create UI navigation system (tabs, buttons, toggles)",
+    "category": "Physics",
+    "embedding": null
+  },
+  "unity_create_ui_dialog": {
+    "title": "Create UI Dialog",
+    "description": "Create modal dialogs (confirmation, alert, input)",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_optimize_ui_canvas": {
+    "title": "Optimize UI Canvas",
+    "description": "Optimize Canvas for performance, quality, or mobile",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_setup_safe_area": {
+    "title": "Setup Safe Area",
+    "description": "Setup Safe Area for mobile devices with notch support",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_apply_ui_theme": {
+    "title": "Apply UI Theme",
+    "description": "Apply a complete theme to UI elements",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_set_ui_colors": {
+    "title": "Set UI Colors",
+    "description": "Set colors for UI elements",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_style_ui_elements": {
+    "title": "Style UI Elements",
+    "description": "Apply styling to UI elements",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_add_ui_effects": {
+    "title": "Add UI Effects",
+    "description": "Add visual effects to UI elements",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_set_typography": {
+    "title": "Set Typography",
+    "description": "Configure text styling and fonts",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_texture_details": {
+    "title": "Get Texture Details",
+    "description": "Get detailed information about a texture asset",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_mesh_details": {
+    "title": "Get Mesh Details",
+    "description": "Get detailed information about a mesh asset",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_audio_details": {
+    "title": "Get Audio Details",
+    "description": "Get detailed information about an audio clip",
+    "category": "Audio",
+    "embedding": null
+  },
+  "unity_get_animation_details": {
+    "title": "Get Animation Details",
+    "description": "Get detailed information about an animation clip",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_get_material_details": {
+    "title": "Get Material Details",
+    "description": "Get detailed information about a material",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_get_asset_file_info": {
+    "title": "Get Asset File Info",
+    "description": "Get file system information about an asset",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_analyze_asset_usage": {
+    "title": "Analyze Asset Usage",
+    "description": "Find where an asset is used in the project",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_asset_import_settings": {
+    "title": "Get Asset Import Settings",
+    "description": "Get import settings for an asset",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_get_runtime_status": {
+    "title": "Get Runtime Status",
+    "description": "Get current runtime status (play mode, pause, etc.)",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_performance_metrics": {
+    "title": "Get Performance Metrics",
+    "description": "Get current performance metrics (FPS, frame time, etc.)",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_memory_usage": {
+    "title": "Get Memory Usage",
+    "description": "Get current memory usage statistics",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_error_status": {
+    "title": "Get Error Status",
+    "description": "Get current error and warning counts",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_build_status": {
+    "title": "Get Build Status",
+    "description": "Get current build status and settings",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_camera_info": {
+    "title": "Get Camera Info",
+    "description": "Get information about cameras in the scene",
+    "category": "Camera",
+    "embedding": null
+  },
+  "unity_get_terrain_info": {
+    "title": "Get Terrain Info",
+    "description": "Get information about terrain in the scene",
+    "category": "Weather",
+    "embedding": null
+  },
+  "unity_get_lighting_info": {
+    "title": "Get Lighting Info",
+    "description": "Get information about lights in the scene",
+    "category": "Lighting",
+    "embedding": null
+  },
+  "unity_get_material_info": {
+    "title": "Get Material Info",
+    "description": "Get information about materials used in scene",
+    "category": "Material",
+    "embedding": null
+  },
+  "unity_get_ui_info": {
+    "title": "Get UI Info",
+    "description": "Get information about UI elements in scene",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_get_physics_info": {
+    "title": "Get Physics Info",
+    "description": "Get information about physics objects in scene",
+    "category": "Physics",
+    "embedding": null
+  },
+  "unity_import_mixamo_animation": {
+    "title": "Import Mixamo Animation",
+    "description": "Import and setup animation from Mixamo",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_organize_animation_assets": {
+    "title": "Organize Animation Assets",
+    "description": "Organize animation files into proper folder structure",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_setup_character_ik": {
+    "title": "Setup Character IK",
+    "description": "Setup Inverse Kinematics for a character",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_animation_layer_mask": {
+    "title": "Create Animation Layer Mask",
+    "description": "Create an avatar mask for animation layers",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_setup_advanced_blend_tree": {
+    "title": "Setup Advanced Blend Tree",
+    "description": "Create complex blend trees for animation",
+    "category": "Cinemachine",
+    "embedding": null
+  },
+  "unity_retarget_animation": {
+    "title": "Retarget Animation",
+    "description": "Retarget animation from one avatar to another",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_create_transition_preset": {
+    "title": "Create Transition Preset",
+    "description": "Create reusable animation transition preset",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_analyze_animation_performance": {
+    "title": "Analyze Animation Performance",
+    "description": "Analyze and optimize animation performance",
+    "category": "Animation",
+    "embedding": null
+  },
+  "unity_get_project_stats": {
+    "title": "Get Project Stats",
+    "description": "Get overall project statistics",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_get_gameobject_details": {
+    "title": "Get GameObject Details",
+    "description": "Get detailed information about a specific GameObject",
+    "category": "GameObject",
+    "embedding": null
+  },
+  "unity_set_property": {
+    "title": "Set Property",
+    "description": "Set a property value on any component",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_execute_batch": {
+    "title": "Execute Batch",
+    "description": "Execute multiple Unity commands in sequence",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_send_chat_response": {
+    "title": "Send Chat Response",
+    "description": "Send a response to the Unity chat interface",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_check_messages": {
+    "title": "Check Messages",
+    "description": "Check for pending messages from Unity",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_caustics": {
+    "title": "Create Caustics",
+    "description": "Create underwater caustics effect",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_water": {
+    "title": "Create Water",
+    "description": "Create water surface with waves and reflections",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_grep_scripts": {
+    "title": "Grep Search in Scripts",
+    "description": "🔍 Search for patterns across multiple script files using regex. Similar to grep command. Returns matching lines with file paths, line numbers, and context. Supports case-insensitive search and context lines.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_read_script_range": {
+    "title": "Read Script Range",
+    "description": "📄 Read a specific range of lines from a script file. Useful for large files where you only need to see a portion. Like using head/tail/sed commands.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_search_code": {
+    "title": "Search Code in Project",
+    "description": "🔎 Search for code patterns across the entire Unity project. Can search in specific directories, filter by file types, and group results by file. More comprehensive than grep_scripts.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_list_script_files": {
+    "title": "List Script Files",
+    "description": "📁 List script files in the project with glob pattern support. Can filter by directory, pattern, and sort by various criteria. Like using find or ls commands.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_analyze_script": {
+    "title": "Analyze Script Quality",
+    "description": "🔍 Comprehensive script analysis tool that checks for syntax errors, code quality issues, Unity-specific problems, and provides improvement suggestions. Detects: bracket mismatches, long methods, unused variables, performance issues in Update(), null reference risks, naming conventions, and more. Use this to identify issues before modifying scripts.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_analyze_performance": {
+    "title": "Performance Diagnostic Tool",
+    "description": "⚡ Comprehensive performance analysis tool that detects expensive operations in Update loops, excessive GameObject.Find usage, inefficient coroutines, string performance issues, LINQ allocations, Draw Call problems, mesh/texture optimization opportunities, lighting issues, and UI performance bottlenecks. Provides detailed recommendations for optimization.",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_check_best_practices": {
+    "title": "Best Practices Checker",
+    "description": "✅ Analyzes Unity scripts for compliance with Unity official guidelines, coding standards, security issues, and architectural patterns. Detects: Resources.Load usage, magic numbers, singleton patterns, API key hardcoding, PlayerPrefs security issues, high coupling, large classes, and provides compliance scoring with detailed recommendations.",
+    "category": "Optimization",
+    "embedding": null
+  },
+  "unity_monitor_runtime_errors": {
+    "title": "Monitor Runtime Errors",
+    "description": "🔴 Real-time runtime error monitoring and analysis tool. Detects and categorizes: NullReferenceException, IndexOutOfRange, MissingReference, and other runtime errors. Provides error patterns, stack trace analysis, affected files, potential issues detection (deep hierarchies, self-references), and specific solutions for each error type. Essential for debugging and error prevention.",
+    "category": "Monitoring",
+    "embedding": null
+  },
+  "unity_auto_attach_ui": {
+    "title": "Auto Attach UI Elements",
+    "description": "Automatically attach UI elements to component fields based on naming conventions",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_setup_ui_canvas": {
+    "title": "Setup UI Canvas",
+    "description": "Configure UI Canvas with different render modes (overlay, camera, world) and settings",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_set_ui_anchor": {
+    "title": "Set UI Anchor",
+    "description": "Set UI element anchor presets or custom anchor values for RectTransform",
+    "category": "UI",
+    "embedding": null
+  },
+  "unity_create_prefab": {
+    "title": "Create Prefab",
+    "description": "Create a prefab from a GameObject in the scene.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_read_shader": {
+    "title": "Read Shader File",
+    "description": "Read the content of a .shader file. This must be called BEFORE modifying the shader.",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_modify_shader": {
+    "title": "Modify Shader File",
+    "description": "Modify an existing .shader file by replacing text.",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_analyze_shader": {
+    "title": "Analyze Shader Structure",
+    "description": "Analyze a shader's structure without reading full content.",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_read_shader_graph": {
+    "title": "Read ShaderGraph Asset",
+    "description": "Read and parse a Unity ShaderGraph (.shadergraph or .shadersubgraph) file.",
+    "category": "Shader",
+    "embedding": null
+  },
+  "unity_read_vfx_graph": {
+    "title": "Read VFX Graph Asset",
+    "description": "Read and analyze an existing VFX Graph (.vfx) asset file.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_modify_vfx_graph": {
+    "title": "Modify VFX Graph Asset",
+    "description": "Modify an existing VFX Graph asset by text replacement.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_analyze_vfx_graph": {
+    "title": "Analyze VFX Graph",
+    "description": "Analyze a VFX Graph asset structure without reading full content.",
+    "category": "VFX",
+    "embedding": null
+  },
+  "unity_read_particle_system": {
+    "title": "Read Particle System",
+    "description": "Read all properties of a Particle System component on a GameObject.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_modify_particle_system": {
+    "title": "Modify Particle System",
+    "description": "Modify properties of an existing Particle System component.",
+    "category": "Utility",
+    "embedding": null
+  },
+  "unity_create_goap_agent": {
+    "title": "Create GOAP Agent",
+    "description": "Create a GOAP (Goal Oriented Action Planning) AI agent. GOAP agents plan their actions to achieve goals based on world state.",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_define_behavior_language": {
+    "title": "Define Behavior Using Natural Language",
+    "description": "Define complete AI behavior using natural language description. Supports English and Japanese.",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_create_goap_template": {
+    "title": "Create GOAP Template",
+    "description": "Create a complete game-specific GOAP AI from pre-built professional templates.",
+    "category": "GOAP",
+    "embedding": null
+  },
+  "unity_create_bt_agent": {
+    "title": "Create Behavior Tree Agent",
+    "description": "Create a BehaviorTreeRunner on a GameObject.",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_add_bt_node": {
+    "title": "Add Behavior Tree Node",
+    "description": "Add a node to a behavior tree.",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_create_bt_from_description": {
+    "title": "Create Behavior Tree from Natural Language",
+    "description": "Create a complete behavior tree from a natural language description.",
+    "category": "Other",
+    "embedding": null
+  },
+  "unity_modify_script": {
+    "title": "Modify Script",
+    "description": "Edit existing Unity scripts.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_edit_script_line": {
+    "title": "Edit Script Line",
+    "description": "Edit a specific line in a Unity script.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_add_script_method": {
+    "title": "Add Script Method",
+    "description": "Add a new method to a Unity script.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_update_script_variable": {
+    "title": "Update Script Variable",
+    "description": "Update variable declaration or value in a Unity script.",
+    "category": "Scripting",
+    "embedding": null
+  },
+  "unity_read_script": {
+    "title": "Read Script Content",
+    "description": "Read the content of a Unity script file with line numbers.",
+    "category": "Scripting",
+    "embedding": null
+  }
+}

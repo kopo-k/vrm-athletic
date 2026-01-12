@@ -62,9 +62,7 @@ public class PlayerController : MonoBehaviour
 
         if (score >= 6)
         {
-            isGameOver = true;
-            winText.text = "You Win!";
-            winText.color = Color.green;
+            GameClear();  // ゲームクリア処理に変更
         }
     }
 
@@ -79,6 +77,21 @@ public class PlayerController : MonoBehaviour
         
         // 残り時間を表示（小数点1桁まで）
         timeLimitText.text = "Time: " + remainingTime.ToString("F1");
+    }
+
+    void GameClear()
+    {
+        isGameOver = true;
+        winText.text = "You Win!\nTime: " + elapsedTime.ToString("F2") + "s";
+        winText.color = Color.green;
+        rd.linearVelocity = Vector3.zero;
+        rd.angularVelocity = Vector3.zero;
+
+        // ランキングに登録
+        if (RankingManager.Instance != null)
+        {
+            RankingManager.Instance.RegisterTime(elapsedTime);
+        }
     }
 
     void GameOver()

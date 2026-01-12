@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "unity-synaptic": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "C:/Users/kopo-/TechStadium/ts_un_stu_202511/10_UnityProject/workDay01/rollboll/Assets/Synaptic AI Pro/MCPServer/index.js"
+      ],
+      "cwd": "C:/Users/kopo-/TechStadium/ts_un_stu_202511/10_UnityProject/workDay01/rollboll/Assets/Synaptic AI Pro/MCPServer"
+    }
+  }
+}
