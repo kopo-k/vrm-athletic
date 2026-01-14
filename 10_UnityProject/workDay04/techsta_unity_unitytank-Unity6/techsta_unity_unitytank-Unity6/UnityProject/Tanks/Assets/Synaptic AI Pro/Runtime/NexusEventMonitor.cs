@@ -359,7 +359,7 @@ namespace SynapticPro
             return true;
         }
 
-#if UNITY_2019_1_OR_NEWER
+#if UNITY_EDITOR && UNITY_2019_1_OR_NEWER
         private void OnCompilationStarted(object context)
         {
             if (!isMonitoringCompile) return;
@@ -541,30 +541,31 @@ Recent Events: {eventQueue.Count} in queue";
 
         #region GUI
 
+#if UNITY_EDITOR
         void OnGUI()
         {
             GUILayout.Label("Nexus Event Monitor", EditorStyles.boldLabel);
-            
+
             EditorGUILayout.Space();
-            
+
             // Display monitoring state
             isMonitoringPlayState = EditorGUILayout.Toggle("Monitor Play State", isMonitoringPlayState);
             isMonitoringFileChanges = EditorGUILayout.Toggle("Monitor File Changes", isMonitoringFileChanges);
             isMonitoringCompile = EditorGUILayout.Toggle("Monitor Compilation", isMonitoringCompile);
-            
+
             EditorGUILayout.Space();
-            
+
             // Statistics information
             EditorGUILayout.LabelField("Event Queue Size", eventQueue.Count.ToString());
             EditorGUILayout.LabelField("Active Subscriptions", eventSubscriptions.Count.ToString());
-            
+
             EditorGUILayout.Space();
-            
+
             if (GUILayout.Button("Clear Event Queue"))
             {
                 eventQueue.Clear();
             }
-            
+
             if (GUILayout.Button("Test Custom Event"))
             {
                 TriggerCustomEvent("test_event", new Dictionary<string, object>
@@ -574,6 +575,7 @@ Recent Events: {eventQueue.Count} in queue";
                 }, "Manual test event triggered");
             }
         }
+#endif
 
         #endregion
     }

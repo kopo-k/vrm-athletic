@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "unity-synaptic": {
+      "command": "node",
+      "args": [
+        "C:/Users/kopo-/TechStadium/ts_un_stu_202511/10_UnityProject/workDay04/techsta_unity_unitytank-Unity6/techsta_unity_unitytank-Unity6/UnityProject/Tanks/Assets/Synaptic AI Pro/MCPServer/index.js"
+      ]
+    }
+  }
+}
