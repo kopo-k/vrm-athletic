@@ -1,0 +1,84 @@
+# ===========================
+# Unity Generated
+# ===========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# ===========================
+# Memory Captures
+# ===========================
+MemoryCaptures/
+
+# ===========================
+# Asset meta data
+# ===========================
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ===========================
+# OS Generated
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================
+# IDE
+# ===========================
+.idea/
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ===========================
+# Builds
+# ===========================
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# ===========================
+# Crashlytics
+# ===========================
+crashlytics-build.properties
+sysinfo.txt
+
+# ===========================
+# Environment / Secrets
+# ===========================
+.env
+.env.local
+.env.*.local
+*.env
+
+# API Keys（直接記述する場合）
+# Assets/Scripts/API/SupabaseConfig.cs
+
+# ===========================
+# Packages
+# ===========================
+Packages/packages-lock.json

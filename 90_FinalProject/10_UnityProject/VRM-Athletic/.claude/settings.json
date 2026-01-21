@@ -1,0 +1,17 @@
+{
+  "project": {
+    "name": "VRM-Athletic",
+    "type": "unity",
+    "language": "csharp"
+  },
+  "preferences": {
+    "codeStyle": {
+      "naming": {
+        "classes": "PascalCase",
+        "methods": "PascalCase",
+        "variables": "camelCase",
+        "constants": "UPPER_SNAKE_CASE"
+      }
+    }
+  }
+}
