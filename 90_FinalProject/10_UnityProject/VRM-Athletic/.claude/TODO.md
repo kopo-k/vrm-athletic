@@ -30,7 +30,7 @@
   - [ ] CharacterData.cs（キャラクター種別情報）
   - [ ] CharacterSpawner.cs（キャラクター生成）
 - [ ] Scripts/Game 実装
-  - [ ] PlayerController.cs（移動・ジャンプ）
+  - [x] PlayerController.cs（移動・ジャンプ）
   - [ ] Timer.cs（タイム計測）
   - [ ] GoalTrigger.cs（ゴール判定）
   - [ ] GameManager.cs（ゲーム進行管理）
@@ -42,12 +42,12 @@
   - [ ] ScoreApi.cs（POST/GET処理）
 - [ ] Scripts/UI 実装
   - [x] TitleUI.cs
-  - [ ] CharacterSelectUI.cs
+  - [x] CharacterSelectUI.cs
   - [ ] ResultUI.cs
   - [ ] RankingUI.cs
 - [ ] 画面遷移実装
   - [x] Title → CharacterSelect
-  - [ ] CharacterSelect → Game
+  - [x] CharacterSelect → Game
   - [ ] Game → Result
   - [ ] Result → Title（リトライ）
 
@@ -61,7 +61,7 @@
   - [ ] ゴール地点
 - [ ] UI調整
   - [x] タイトル画面デザイン
-  - [ ] キャラ選択画面デザイン
+  - [x] キャラ選択画面デザイン
   - [ ] ゲーム中UI（タイマー表示）
   - [ ] リザルト画面デザイン
 - [ ] 演出追加（余裕があれば）
@@ -91,7 +91,7 @@
 ## 現在の進捗
 
 **現在のフェーズ**: Phase 2 / Phase 3 並行
-**次のタスク**: CharacterSelectシーン UI構築 & CharacterSelectUI.cs 実装
+**次のタスク**: アスレチックコース作成 & タイマー実装
 
 ---
 
