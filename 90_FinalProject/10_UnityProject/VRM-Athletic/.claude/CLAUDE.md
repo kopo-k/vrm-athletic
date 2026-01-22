@@ -172,6 +172,7 @@ GET {URL}/rest/v1/scores?select=*&order=clear_time.asc&limit=10
 |----------|------|
 | `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\Unity_シーン作成ガイド.md` | シーン作成手順 |
 | `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\Title画面作成ガイド.md` | Title画面の作成手順 |
+| `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\CharacterSelect画面作成ガイド.md` | CharacterSelect画面の作成手順 |
 
 ## 環境変数
 

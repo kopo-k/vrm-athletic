@@ -41,12 +41,12 @@
   - [ ] SupabaseConfig.cs（URL/API Key設定）
   - [ ] ScoreApi.cs（POST/GET処理）
 - [ ] Scripts/UI 実装
-  - [ ] TitleUI.cs
+  - [x] TitleUI.cs
   - [ ] CharacterSelectUI.cs
   - [ ] ResultUI.cs
   - [ ] RankingUI.cs
 - [ ] 画面遷移実装
-  - [ ] Title → CharacterSelect
+  - [x] Title → CharacterSelect
   - [ ] CharacterSelect → Game
   - [ ] Game → Result
   - [ ] Result → Title（リトライ）
@@ -60,7 +60,7 @@
   - [ ] 障害物
   - [ ] ゴール地点
 - [ ] UI調整
-  - [ ] タイトル画面デザイン
+  - [x] タイトル画面デザイン
   - [ ] キャラ選択画面デザイン
   - [ ] ゲーム中UI（タイマー表示）
   - [ ] リザルト画面デザイン
@@ -90,8 +90,8 @@
 
 ## 現在の進捗
 
-**現在のフェーズ**: Phase 1 完了 → Phase 2 開始
-**次のタスク**: Titleシーン UI構築 & TitleUI.cs 実装
+**現在のフェーズ**: Phase 2 / Phase 3 並行
+**次のタスク**: CharacterSelectシーン UI構築 & CharacterSelectUI.cs 実装
 
 ---
 
