@@ -174,6 +174,9 @@ GET {URL}/rest/v1/scores?select=*&order=clear_time.asc&limit=10
 | `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\Title画面作成ガイド.md` | Title画面の作成手順 |
 | `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\CharacterSelect画面作成ガイド.md` | CharacterSelect画面の作成手順 |
 | `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\VRMキャラクター設定ガイド.md` | VRMキャラクター設定手順 |
+| `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\Platformer_Deathrun_アセットガイド.md` | 購入アセットの使い方 |
+| `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\タイマー_ゴール_Result設定ガイド.md` | タイマー・ゴール設定 |
+| `C:\Users\kopo-\Documents\Obsidian Vault\techStadium\Result画面作成ガイド.md` | Result画面作成（画像版） |
 
 ## 環境変数
 
