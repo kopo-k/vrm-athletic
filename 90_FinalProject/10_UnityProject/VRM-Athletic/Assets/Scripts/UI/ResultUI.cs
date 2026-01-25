@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,18 +16,31 @@ public class ResultUI : MonoBehaviour
     [SerializeField] private Button retryButton;
     [SerializeField] private Button titleButton;
 
+    [Header("設定")]
+    [SerializeField] private string stageName = "Stage1";
+    [SerializeField] private int rankingLimit = 5;
+
     private float clearTime;
+    private ScoreApi scoreApi;
 
     private void Start()
     {
+        // ScoreApiを取得または作成
+        scoreApi = FindObjectOfType<ScoreApi>();
+        if (scoreApi == null)
+        {
+            GameObject apiObj = new GameObject("ScoreApi");
+            scoreApi = apiObj.AddComponent<ScoreApi>();
+        }
+
         // クリアタイムを取得
         clearTime = PlayerPrefs.GetFloat("ClearTime", 0f);
 
         // クリアタイムを表示
         DisplayClearTime();
 
-        // ランキングを表示（後でSupabaseから取得に変更）
-        DisplayRanking();
+        // ランキングを取得・表示
+        FetchAndDisplayRanking();
 
         // ボタンイベントを登録
         if (retryButton != null)
@@ -38,9 +52,6 @@ public class ResultUI : MonoBehaviour
         {
             titleButton.onClick.AddListener(OnTitleButtonClicked);
         }
-
-        // スコアをサーバーに送信（後で実装）
-        // SendScoreToServer();
     }
 
     /// <summary>
@@ -59,21 +70,53 @@ public class ResultUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ランキングを表示
-    /// TODO: Supabaseから取得するように変更
+    /// ランキングを取得して表示
     /// </summary>
-    private void DisplayRanking()
+    private void FetchAndDisplayRanking()
     {
         if (rankingText != null)
         {
-            // 仮のランキング表示（後でSupabaseから取得）
             rankingText.text = "Loading...";
-
-            // TODO: Supabaseからランキング取得後に以下のような形式で表示
-            // 1. PlayerName  00:32.15
-            // 2. PlayerName  00:38.44
-            // 3. PlayerName  00:41.22
         }
+
+        scoreApi.GetRanking(stageName, rankingLimit, OnRankingReceived);
+    }
+
+    /// <summary>
+    /// ランキング取得完了時のコールバック
+    /// </summary>
+    private void OnRankingReceived(List<ScoreApi.ScoreResponse> rankings)
+    {
+        if (rankingText == null) return;
+
+        if (rankings == null || rankings.Count == 0)
+        {
+            rankingText.text = "No data";
+            return;
+        }
+
+        // ランキングを整形して表示（タイムのみ、背景画像の番号に合わせて余白を追加）
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        for (int i = 0; i < rankings.Count; i++)
+        {
+            var score = rankings[i];
+            string timeStr = FormatTime(score.clear_time);
+            sb.AppendLine(timeStr);
+            sb.AppendLine(); // 余白用の空行
+        }
+
+        rankingText.text = sb.ToString().TrimEnd();
+    }
+
+    /// <summary>
+    /// 時間をフォーマット
+    /// </summary>
+    private string FormatTime(float time)
+    {
+        int minutes = Mathf.FloorToInt(time / 60f);
+        int seconds = Mathf.FloorToInt(time % 60f);
+        int milliseconds = Mathf.FloorToInt((time * 100f) % 100f);
+        return string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
     }
 
     /// <summary>

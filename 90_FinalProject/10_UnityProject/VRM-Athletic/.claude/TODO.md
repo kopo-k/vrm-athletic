@@ -31,25 +31,25 @@
   - [ ] CharacterSpawner.cs（キャラクター生成）
 - [ ] Scripts/Game 実装
   - [x] PlayerController.cs（移動・ジャンプ）
-  - [ ] Timer.cs（タイム計測）
-  - [ ] GoalTrigger.cs（ゴール判定）
+  - [x] GameTimer.cs（タイム計測）
+  - [x] GoalTrigger.cs（ゴール判定 + スコア送信）
   - [ ] GameManager.cs（ゲーム進行管理）
 
 ## Phase 3: API・画面遷移（7〜10日目）
 
-- [ ] Scripts/API 実装
-  - [ ] SupabaseConfig.cs（URL/API Key設定）
-  - [ ] ScoreApi.cs（POST/GET処理）
-- [ ] Scripts/UI 実装
+- [x] Scripts/API 実装
+  - [x] SupabaseConfig.cs（ScriptableObject形式）
+  - [x] ScoreApi.cs（POST/GET処理）
+- [x] Scripts/UI 実装
   - [x] TitleUI.cs
   - [x] CharacterSelectUI.cs
-  - [ ] ResultUI.cs
-  - [ ] RankingUI.cs
-- [ ] 画面遷移実装
+  - [x] ResultUI.cs（ランキング表示対応）
+  - [x] RankingUI.cs（ResultUI.csに統合）
+- [x] 画面遷移実装
   - [x] Title → CharacterSelect
   - [x] CharacterSelect → Game
-  - [ ] Game → Result
-  - [ ] Result → Title（リトライ）
+  - [x] Game → Result
+  - [x] Result → Title / CharacterSelect
 
 ## Phase 4: ステージ・UI調整（11〜12日目）
 
@@ -59,15 +59,16 @@
   - [x] 移動する足場
   - [x] 障害物
   - [x] ゴール地点
-- [ ] UI調整
+- [x] UI調整
   - [x] タイトル画面デザイン
   - [x] キャラ選択画面デザイン
-  - [ ] ゲーム中UI（タイマー表示）
-  - [ ] リザルト画面デザイン
+  - [x] ゲーム中UI（タイマー表示）
+  - [x] リザルト画面デザイン
 - [ ] 演出追加（余裕があれば）
   - [ ] カウントダウン演出
   - [ ] ゴール演出
   - [ ] SE/BGM
+   - [ ] 名前を入力できるように 
 
 ## Phase 5: テスト・デバッグ（13日目）
 
@@ -90,8 +91,8 @@
 
 ## 現在の進捗
 
-**現在のフェーズ**: Phase 2 / Phase 3 並行
-**次のタスク**: タイマー & ゴール判定 & Resultシーン実装
+**現在のフェーズ**: Phase 4 / Phase 5
+**次のタスク**: 動作テスト（Supabase連携確認）
 
 ---
 

@@ -75,8 +75,9 @@ sysinfo.txt
 .env.*.local
 *.env
 
-# API Keys（直接記述する場合）
-# Assets/Scripts/API/SupabaseConfig.cs
+# API Keys / Secrets
+Assets/Resources/SupabaseSettings.asset
+Assets/Resources/SupabaseSettings.asset.meta
 
 # ===========================
 # Packages
