@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckDistance = 0.15f;
     [SerializeField] private LayerMask groundLayer = ~0; // 全レイヤー
 
+    [Header("エフェクト")]
+    [SerializeField] private ParticleSystem dustEffectPrefab; // 土煙エフェクトのPrefab
+
     // コンポーネント参照
     private CharacterController characterController;
     private Animator animator;
@@ -29,11 +32,14 @@ public class PlayerController : MonoBehaviour
     private float verticalVelocity = 0f;
     private bool isGrounded = false;
     private float jumpCooldown = 0f; // ジャンプ直後の地面判定を無効化
+    private bool wasGrounded = true; // 前フレームの地面判定（着地検出用）
 
     // Animator パラメータのハッシュ（高速化のため）
     private static readonly int SpeedParam = Animator.StringToHash("Speed");
     private static readonly int IsGroundedParam = Animator.StringToHash("IsGrounded");
     private static readonly int JumpParam = Animator.StringToHash("Jump");
+    private static readonly int IsFallingParam = Animator.StringToHash("IsFalling");
+    private static readonly int VerticalVelocityParam = Animator.StringToHash("VerticalVelocity");
 
     /// <summary>
     /// 初期化処理
@@ -126,6 +132,7 @@ public class PlayerController : MonoBehaviour
                 jumpCooldown = 0.2f; // 0.2秒間は地面判定を無視
                 // ジャンプアニメーションをトリガー
                 animator?.SetTrigger(JumpParam);
+                SpawnDustEffect();
                 Debug.Log($"Jump! Force: {jumpForce}");
             }
         }
@@ -152,6 +159,13 @@ public class PlayerController : MonoBehaviour
         {
             verticalVelocity = 0f;
         }
+
+        // 着地した瞬間にエフェクトを出す
+        if (isGrounded && !wasGrounded)
+        {
+            SpawnDustEffect();
+        }
+        wasGrounded = isGrounded;
 
         // アニメーションを更新
         UpdateAnimation(inputMagnitude, isRunning);
@@ -199,5 +213,21 @@ public class PlayerController : MonoBehaviour
         // Speedをスムーズに変化させる
         animator.SetFloat(SpeedParam, animSpeed, 0.1f, Time.deltaTime);
         animator.SetBool(IsGroundedParam, isGrounded);
+        animator.SetBool(IsFallingParam, !isGrounded && verticalVelocity < 0f);
+        animator.SetFloat(VerticalVelocityParam, verticalVelocity);
+    }
+
+    /// <summary>
+    /// 足元に土煙エフェクトを生成する
+    /// </summary>
+    private void SpawnDustEffect()
+    {
+        if (dustEffectPrefab == null) return;
+
+        // 足元の位置にエフェクトを生成
+        ParticleSystem dust = Instantiate(dustEffectPrefab, transform.position, Quaternion.identity);
+        dust.Play();
+        // 再生終わったら自動削除
+        Destroy(dust.gameObject, dust.main.duration + dust.main.startLifetime.constantMax);
     }
 }

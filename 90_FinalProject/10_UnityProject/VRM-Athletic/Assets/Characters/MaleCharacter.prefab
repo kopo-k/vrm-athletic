@@ -210,3 +210,4 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+  dustEffectPrefab: {fileID: 7209547091561448035, guid: 8a42b6a8791ad384c9fdfd793642eefa, type: 3}
