@@ -784,6 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSelectButton: {fileID: 1434134085}
+  buttonClickSE: {fileID: 8300000, guid: 46551611315ee5a408e116e524ef8b66, type: 3}
 --- !u!4 &1803066906
 Transform:
   m_ObjectHideFlags: 0
