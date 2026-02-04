@@ -534,6 +534,7 @@ MonoBehaviour:
   titleButton: {fileID: 641990918}
   stageName: Stage1
   rankingLimit: 5
+  buttonClickSE: {fileID: 8300000, guid: 46551611315ee5a408e116e524ef8b66, type: 3}
 --- !u!4 &881857882
 Transform:
   m_ObjectHideFlags: 0

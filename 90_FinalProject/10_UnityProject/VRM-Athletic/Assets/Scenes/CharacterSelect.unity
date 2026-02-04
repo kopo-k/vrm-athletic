@@ -731,6 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maleButton: {fileID: 1300377580}
   femaleButton: {fileID: 2104945220}
+  buttonClickSE: {fileID: 8300000, guid: 46551611315ee5a408e116e524ef8b66, type: 3}
 --- !u!4 &1768807651
 Transform:
   m_ObjectHideFlags: 0

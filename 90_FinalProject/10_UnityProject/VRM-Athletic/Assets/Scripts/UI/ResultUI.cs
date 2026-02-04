@@ -20,11 +20,18 @@ public class ResultUI : MonoBehaviour
     [SerializeField] private string stageName = "Stage1";
     [SerializeField] private int rankingLimit = 5;
 
+    [Header("効果音")]
+    [SerializeField] private AudioClip buttonClickSE;
+
     private float clearTime;
     private ScoreApi scoreApi;
 
     private void Start()
     {
+        // マウスカーソルを表示（Gameシーンでロックされているため）
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         // ScoreApiを取得または作成
         scoreApi = FindObjectOfType<ScoreApi>();
         if (scoreApi == null)
@@ -55,7 +62,7 @@ public class ResultUI : MonoBehaviour
     }
 
     /// <summary>
-    /// クリアタイムを表示
+    /// クリアタイムを表示（黄色で表示）
     /// </summary>
     private void DisplayClearTime()
     {
@@ -65,7 +72,8 @@ public class ResultUI : MonoBehaviour
             int seconds = Mathf.FloorToInt(clearTime % 60f);
             int milliseconds = Mathf.FloorToInt((clearTime * 100f) % 100f);
 
-            clearTimeText.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+            // 黄色で表示
+            clearTimeText.text = string.Format("<color=yellow>{0:00}:{1:00}.{2:00}</color>", minutes, seconds, milliseconds);
         }
     }
 
@@ -96,12 +104,24 @@ public class ResultUI : MonoBehaviour
         }
 
         // ランキングを整形して表示（タイムのみ、背景画像の番号に合わせて余白を追加）
+        // 自分の記録と一致するものは黄色で表示
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
         for (int i = 0; i < rankings.Count; i++)
         {
             var score = rankings[i];
             string timeStr = FormatTime(score.clear_time);
-            sb.AppendLine(timeStr);
+
+            // 自分の記録と一致するか判定（0.01秒以内の誤差は同一とみなす）
+            bool isMyScore = Mathf.Abs(score.clear_time - clearTime) < 0.01f;
+
+            if (isMyScore)
+            {
+                sb.AppendLine($"<color=yellow>{timeStr}</color>");
+            }
+            else
+            {
+                sb.AppendLine(timeStr);
+            }
             sb.AppendLine(); // 余白用の空行
         }
 
@@ -124,13 +144,33 @@ public class ResultUI : MonoBehaviour
     /// </summary>
     private void OnRetryButtonClicked()
     {
-        SceneManager.LoadScene("CharacterSelect");
+        PlayButtonSE();
+        Invoke(nameof(LoadCharacterSelectScene), 0.3f);
     }
 
     /// <summary>
     /// タイトルボタンがクリックされたときの処理
     /// </summary>
     private void OnTitleButtonClicked()
+    {
+        PlayButtonSE();
+        Invoke(nameof(LoadTitleScene), 0.3f);
+    }
+
+    private void PlayButtonSE()
+    {
+        if (buttonClickSE != null)
+        {
+            AudioSource.PlayClipAtPoint(buttonClickSE, Camera.main.transform.position);
+        }
+    }
+
+    private void LoadCharacterSelectScene()
+    {
+        SceneManager.LoadScene("CharacterSelect");
+    }
+
+    private void LoadTitleScene()
     {
         SceneManager.LoadScene("Title");
     }

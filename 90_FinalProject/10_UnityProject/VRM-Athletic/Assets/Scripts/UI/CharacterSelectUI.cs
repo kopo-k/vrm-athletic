@@ -11,6 +11,9 @@ public class CharacterSelectUI : MonoBehaviour
     [SerializeField] private Button maleButton;
     [SerializeField] private Button femaleButton;
 
+    [Header("効果音")]
+    [SerializeField] private AudioClip buttonClickSE;
+
     private void Start()
     {
         // ボタンのクリックイベントを登録
@@ -23,12 +26,13 @@ public class CharacterSelectUI : MonoBehaviour
     /// </summary>
     private void OnMaleButtonClicked()
     {
+        PlayButtonSE();
         // キャラクター選択を保存（後でGameData.csに変更）
         PlayerPrefs.SetString("SelectedCharacter", "male");
         PlayerPrefs.Save();
 
-        // Gameシーンに遷移
-        SceneManager.LoadScene("Game");
+        // SE再生後に遷移
+        Invoke(nameof(LoadGameScene), 0.3f);
     }
 
     /// <summary>
@@ -36,11 +40,25 @@ public class CharacterSelectUI : MonoBehaviour
     /// </summary>
     private void OnFemaleButtonClicked()
     {
+        PlayButtonSE();
         // キャラクター選択を保存（後でGameData.csに変更）
         PlayerPrefs.SetString("SelectedCharacter", "female");
         PlayerPrefs.Save();
 
-        // Gameシーンに遷移
+        // SE再生後に遷移
+        Invoke(nameof(LoadGameScene), 0.3f);
+    }
+
+    private void PlayButtonSE()
+    {
+        if (buttonClickSE != null)
+        {
+            AudioSource.PlayClipAtPoint(buttonClickSE, Camera.main.transform.position);
+        }
+    }
+
+    private void LoadGameScene()
+    {
         SceneManager.LoadScene("Game");
     }
 }
